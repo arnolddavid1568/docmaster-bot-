@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-# Install system dependencies for OCR and PDF rendering
+# Install system dependencies for OCR (Tesseract) and PDF processing (Poppler)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     tesseract-ocr \
     tesseract-ocr-eng \
